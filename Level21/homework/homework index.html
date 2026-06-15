@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Level 21</title>
+</head>
+<body>
+
+    <!-- 1. მარტივი სარეგისტრაციო ფორმა -->
+    <h1>მომხმარებლის რეგისტრაცია</h1>
+
+    <form>
+        <label>სახელი:</label>
+        <input type="text" name="firstname"><br><br>
+
+        <label>გვარი:</label>
+        <input type="text" name="lastname"><br><br>
+
+        <label>ელფოსტა:</label>
+        <input type="email" name="email"><br><br>
+
+        <label>პაროლი:</label>
+        <input type="password" name="password"><br><br>
+
+        <input type="submit" value="რეგისტრაცია">
+    </form>
+
+    <hr>
+
+    <!-- 2. მედია პლეერი აღწერით -->
+    <h1>მედია პლეერი</h1>
+
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <video width="400" controls>
+        <source src="video.mp4" type="video/mp4">
+    </video>
+
+    <ol>
+        <li>აუდიო ფაილი - მუსიკის მოსასმენად.</li>
+        <li>ვიდეო ფაილი - ვიდეოს საყურებლად.</li>
+    </ol>
+
+    <hr>
+
+    <!-- 3. ქვეყნისა და ქალაქის ასარჩევი მენიუ -->
+    <h1>საცხოვრებელი ადგილი</h1>
+
+    <label>აირჩიეთ ქვეყანა:</label>
+    <select>
+        <option>საქართველო</option>
+        <option>საფრანგეთი</option>
+        <option>გერმანია</option>
+        <option>იტალია</option>
+    </select>
+
+    <br><br>
+
+    <label>აირჩიეთ ქალაქი:</label>
+    <select>
+        <option>თბილისი</option>
+        <option>პარიზი</option>
+        <option>ბერლინი</option>
+        <option>რომი</option>
+    </select>
+
+    <hr>
+
+    <!-- 4. ონლაინ ტესტი -->
+    <h1>Quiz</h1>
+
+    <form>
+
+        <p>1. HTML არის?</p>
+        <input type="radio" name="q1"> პროგრამირების ენა<br>
+        <input type="radio" name="q1"> მარკირების ენა<br><br>
+
+        <p>2. რომელი ტეგები გამოიყენება ტექსტისთვის?</p>
+        <input type="checkbox"> p<br>
+        <input type="checkbox"> h1<br>
+        <input type="checkbox"> img<br><br>
+
+        <p>3. რას ნიშნავს HTML?</p>
+        <textarea rows="4" cols="40"></textarea><br><br>
+
+        <input type="submit" value="გაგზავნა">
+
+    </form>
+
+</body>
+</html>
