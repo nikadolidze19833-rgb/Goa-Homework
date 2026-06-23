@@ -1,0 +1,19 @@
+.ex1{
+    text-decoration: underline;
+}
+
+.ex2{
+    text-decoration: overline;
+}
+
+.ex3{
+    text-decoration: line-through;
+}
+
+.ex4{
+    text-decoration: none;
+}
+
+.ex5{
+    text-decoration: underline wavy red;
+}

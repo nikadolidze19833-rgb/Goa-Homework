@@ -1,0 +1,19 @@
+.s1{
+    text-shadow: 2px 2px red;
+}
+
+.s2{
+    text-shadow: 3px 3px 5px blue;
+}
+
+.s3{
+    text-shadow: -2px -2px green;
+}
+
+.s4{
+    text-shadow: 2px 2px 4px orange;
+}
+
+.s5{
+    text-shadow: 0 0 10px purple;
+}
