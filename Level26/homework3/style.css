@@ -1,0 +1,73 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f4f6f8;
+    font-family:'Poppins', sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.table-container{
+    width:720px;
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.leaderboard{
+    width:100%;
+    border-collapse:collapse;
+}
+
+.leaderboard thead{
+    background:#0b9b83;
+}
+
+.leaderboard th{
+    color:#fff;
+    text-align:left;
+    padding:24px 28px;
+    font-size:18px;
+    font-weight:600;
+}
+
+.leaderboard td{
+    padding:24px 28px;
+    font-size:20px;
+    color:#333;
+    border-bottom:1px solid #e5e5e5;
+}
+
+.leaderboard tbody tr{
+    transition:.3s;
+}
+
+.leaderboard tbody tr:hover{
+    background:#f8f8f8;
+}
+
+/* მონიშნული მეორე ადგილი */
+.highlight{
+    background:#f2f2f2;
+}
+
+.highlight td{
+    color:#10a38b;
+    font-weight:600;
+}
+
+/* პირველი და ბოლო კუთხეების დამრგვალება */
+thead th:first-child{
+    border-top-left-radius:12px;
+}
+
+thead th:last-child{
+    border-top-right-radius:12px;
+}

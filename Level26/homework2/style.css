@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#1b1035;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.table-wrapper{
+    width:1100px;
+    overflow:hidden;
+    border-radius:8px;
+}
+
+.attendance-table{
+    width:100%;
+    border-collapse:collapse;
+    color:white;
+    background:linear-gradient(
+        90deg,
+        #4f00ff 0%,
+        #7b1fff 40%,
+        #b224ef 100%
+    );
+}
+
+thead{
+    background:rgba(255,255,255,0.15);
+}
+
+thead th{
+    padding:20px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-size:13px;
+    font-weight:700;
+    text-align:center;
+}
+
+tbody td{
+    padding:18px 14px;
+    font-size:16px;
+    color:rgba(255,255,255,.9);
+}
+
+tbody td:first-child{
+    text-align:left;
+    white-space:nowrap;
+}
+
+tbody tr{
+    transition:.3s;
+}
+
+tbody tr:hover{
+    background:rgba(255,255,255,.08);
+}
+
+/* მონიშნული რიგი */
+.active-row{
+    background:rgba(255,255,255,.12);
+}
+
+/* მონიშნული სვეტი */
+.active-col{
+    background:rgba(255,255,255,.08);
+}
+
+thead .active-col{
+    background:rgba(255,255,255,.12);
+}

@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, serif;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.table-container {
+    width: 700px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th,
+td {
+    border: 1px dashed #666;
+    text-align: center;
+    padding: 12px 10px;
+    position: relative;
+}
+
+thead th {
+    background: #8bc34a;
+    color: #222;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 16px 10px;
+}
+
+/* მწვანე ოვალური ეფექტი */
+tbody tr.highlight td::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    right: 2px;
+    top: 3px;
+    bottom: 3px;
+    background: rgba(180, 220, 130, 0.45);
+    border-radius: 50px;
+    z-index: 0;
+}
+
+tbody td {
+    z-index: 1;
+}
+
+tbody td {
+    position: relative;
+}
+
+tbody td span {
+    position: relative;
+    z-index: 2;
+}
