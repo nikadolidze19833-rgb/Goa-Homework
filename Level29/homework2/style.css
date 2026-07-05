@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+/* საერთო სტილი */
+.box {
+    background-color: lightblue;
+    border: 2px solid blue;
+    margin: 15px 0;
+    padding: 10px;
+}
+
+/* მაგალითი 1 */
+.box1 {
+    min-width: 200px;
+    max-width: 400px;
+}
+
+/* მაგალითი 2 */
+.box2 {
+    min-width: 150px;
+    max-width: 300px;
+}
+
+/* მაგალითი 3 */
+.box3 {
+    min-width: 250px;
+    max-width: 500px;
+}
+
+/* მაგალითი 4 */
+.box4 {
+    min-width: 100px;
+    max-width: 350px;
+}
+
+/* მაგალითი 5 */
+.box5 {
+    min-width: 300px;
+    max-width: 600px;
+}

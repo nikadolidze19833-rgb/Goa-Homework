@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+div {
+    background-color: lightblue;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Padding */
+.padding1 {
+    padding: 15px;
+}
+
+.padding2 {
+    padding: 23px;
+}
+
+/* Margin */
+.margin1 {
+    margin: 20px;
+}
+
+.margin2 {
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+/* Box-sizing */
+.box1 {
+    width: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box2 {
+    width: 200px;
+    padding: 20px;
+    box-sizing: content-box;
+}
+
+/* Min-width */
+.min1 {
+    width: 30%;
+    min-width: 200px;
+}
+
+.min2 {
+    width: 20%;
+    min-width: 300px;
+}
+
+/* Max-width */
+.max1 {
+    max-width: 400px;
+    background-color: rgb(12, 215, 12);
+}
+
+.max2 {
+    max-width: 250px;
+    background-color: rgb(193, 32, 32);
+}
