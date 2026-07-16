@@ -1,0 +1,16 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 30px;
+}
+
+.box{
+    width: 240px;
+    height: 100px;
+    background: rgb(0, 64, 255);
+
+    transition: width 2s ease-in-out;
+}
+
+.box:hover{
+    width: 500px;
+}
