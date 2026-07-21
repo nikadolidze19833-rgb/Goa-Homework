@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+background-color: #f2f2f2;
+height: 100vh;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.container{
+display: flex;
+width: 900px;
+border-radius: 15px;
+overflow: hidden;
+
+}
+
+.card{
+flex: 1;
+padding: 45px 35px;
+display: flex;
+flex-direction: column;
+
+}
+
+
+.card img{
+width: 60px; 
+margin-bottom: 30px;   
+}
+
+.card h2{
+    color: #f2f2f2;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.card p{
+ color: rgba (255,255,255,8);
+ line-height: 1,8;
+ margin-bottom: 70px;
+ flex: 1;   
+}
+
+.card button{
+    width: 140px;
+    height: 50px;
+    border: none;
+    border-radius: 30px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+.sedan{
+    background-color: orange;
+}
+
+.suv{
+    background-color: aqua;
+}
+
+.luxury{
+    background-color: cadetblue; 
+
+}
+
+.sedan button{
+    color: #e28625;
+}
+
+.suv button{
+    color:#0F7C84;
+}
+
+.luxury button{
+    color:#0A4D4F;
+}
+
+
+.card button:active{
+    transform: scale(0.95);
+}
+
+.card button:hover{
+transform: scale(1,1);
+background: transparent;
+color: white;
+border: 2px solid white;
+}
+    
+
+
+
