@@ -1,0 +1,135 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Outfit',sans-serif;
+    background:hsl(217, 54%, 11%);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.card{
+    width:350px;
+    background:hsl(216, 50%, 16%);
+    padding:24px;
+    border-radius:18px;
+    box-shadow:0 25px 50px rgba(0,0,0,.45);
+}
+
+.image-box{
+    position:relative;
+    overflow:hidden;
+    border-radius:12px;
+    cursor:pointer;
+}
+
+.image-box img{
+    width:100%;
+    display:block;
+    border-radius:12px;
+}
+
+.image-box::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:rgba(0,255,247,.45);
+    opacity:0;
+    transition:.3s;
+}
+
+.image-box::after{
+    content:"";
+    position:absolute;
+    width:48px;
+    height:48px;
+    background:url("icon-view.svg") center/contain no-repeat;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    opacity:0;
+    transition:.3s;
+}
+
+.image-box:hover::before,
+.image-box:hover::after{
+    opacity:1;
+}
+
+h2{
+    color:#fff;
+    margin:24px 0 18px;
+    font-size:22px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+h2:hover{
+    color:hsl(178,100%,50%);
+}
+
+.description{
+    color:hsl(215,51%,70%);
+    line-height:1.6;
+    font-size:18px;
+}
+
+.info{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:24px 0;
+}
+
+.price,
+.time{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.price{
+    color:hsl(178,100%,50%);
+    font-weight:600;
+}
+
+.time{
+    color:hsl(215,51%,70%);
+}
+
+hr{
+    border:none;
+    border-top:1px solid hsl(215,32%,27%);
+}
+
+.creator{
+    display:flex;
+    align-items:center;
+    gap:16px;
+    margin-top:20px;
+}
+
+.creator img{
+    width:36px;
+    border:1px solid #fff;
+    border-radius:50%;
+}
+
+.creator p{
+    color:hsl(215,51%,70%);
+}
+
+.creator span{
+    color:#fff;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.creator span:hover{
+    color:hsl(178,100%,50%);
+}
