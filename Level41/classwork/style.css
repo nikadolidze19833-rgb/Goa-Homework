@@ -1,0 +1,253 @@
+
+
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f5f1e8;
+  color: #1e2934;
+  font-family: "DM Sans", Arial, sans-serif;
+}
+
+header {
+  width: min(1200px, 90%);
+  min-height: 85px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #1e2934;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.logo span {
+  color: #fa6b49;
+}
+
+nav {
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #53616c;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #fa6b49;
+}
+
+.menu-button {
+  display: none;
+  border: 0;
+  background: transparent;
+  font-size: 25px;
+}
+
+.product {
+  width: min(1200px, 90%);
+  min-height: 680px;
+  margin: 35px auto 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 90px;
+}
+
+.image-box {
+  min-height: 530px;
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d9e7ee;
+  border-radius: 12px;
+}
+
+.image-box img {
+  width: 100%;
+  max-width: 450px;
+  filter: drop-shadow(15px 20px 15px rgba(0, 0, 0, 0.2));
+}
+
+.category {
+  color: #fa6b49;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+h1 {
+  margin: 12px 0;
+  font-size: clamp(45px, 6vw, 72px);
+  line-height: 1.05;
+}
+
+.price {
+  margin-bottom: 25px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.description {
+  max-width: 500px;
+  color: #64717c;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.details {
+  margin: 35px 0;
+  padding: 25px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-top: 1px solid #ccd1d1;
+  border-bottom: 1px solid #ccd1d1;
+}
+
+
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0 15px;
+  border: 1px solid #b8c0c4;
+  border-radius: 4px;
+}
+
+.quantity button {
+  border: 0;
+  background: transparent;
+  color: #1e2934;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.add-button {
+  padding: 15px 34px;
+  border: 0;
+  border-radius: 4px;
+  background: #1e2934;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background: #fa6b49;
+}
+
+.about {
+  padding: 100px 5%;
+  background: #1e2934;
+  color: white;
+  text-align: center;
+}
+
+.about h2 {
+  max-width: 650px;
+  margin: 15px auto 20px;
+  font-size: clamp(35px, 5vw, 58px);
+}
+
+.about > p:last-child {
+  max-width: 620px;
+  margin: auto;
+  color: #c6d0d4;
+  line-height: 1.7;
+}
+
+footer {
+  width: min(1200px, 90%);
+  margin: auto;
+  padding: 28px 0;
+  display: flex;
+  justify-content: space-between;
+  color: #64717c;
+  font-size: 13px;
+}
+
+/* Mobile design */
+@media (max-width: 700px) {
+  nav {
+    display: none;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+  .product {
+    margin-top: 20px;
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .image-box {
+    min-height: 380px;
+    padding: 25px;
+  }
+
+  .image-box img {
+    max-width: 290px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  .details {
+    gap: 15px;
+  }
+
+  .details strong {
+    font-size: 13px;
+  }
+
+  .details span {
+    font-size: 10px;
+  }
+
+  .buy-section {
+    flex-direction: column;
+  }
+
+  .quantity {
+    min-height: 48px;
+    justify-content: center;
+  }
+
+  .add-button {
+    min-height: 48px;
+  }
+
+  .about {
+    padding: 70px 8%;
+  }
+
+  footer {
+    gap: 8px;
+    flex-direction: column;
+  }
+}
