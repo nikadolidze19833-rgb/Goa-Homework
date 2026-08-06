@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f3e5d8;
+    font-family:'Outfit',sans-serif;
+    display:flex;
+    justify-content:center;
+    padding:80px 20px;
+}
+
+.container{
+    background:white;
+    width:700px;
+    border-radius:20px;
+    padding:35px;
+}
+
+.container img{
+    width:100%;
+    border-radius:12px;
+    display:block;
+    margin-bottom:30px;
+}
+
+h1{
+    font-family:'Young Serif',serif;
+    color:#302d2c;
+    margin-bottom:20px;
+    font-size:42px;
+}
+
+.description{
+    color:#5f574e;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.prep{
+    background:#fff5fa;
+    padding:25px;
+    border-radius:12px;
+    margin-bottom:35px;
+}
+
+.prep h3{
+    color:#7b284f;
+    margin-bottom:15px;
+}
+
+.prep ul{
+    padding-left:20px;
+}
+
+.prep li{
+    margin-bottom:10px;
+    color:#5f574e;
+}
+
+h2{
+    font-family:'Young Serif',serif;
+    color:#854632;
+    margin:25px 0 15px;
+}
+
+.ingredients{
+    padding-left:20px;
+    color:#5f574e;
+}
+
+.ingredients li{
+    margin-bottom:10px;
+}
+
+.instructions{
+    padding-left:22px;
+    color:#5f574e;
+}
+
+.instructions li{
+    margin-bottom:15px;
+    line-height:1.8;
+}
+
+.instructions strong{
+    color:#302d2c;
+}
+
+hr{
+    margin:35px 0;
+    border:1px solid #e4ded8;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+}
+
+table td{
+    padding:15px;
+    border-bottom:1px solid #e4ded8;
+}
+
+.value{
+    color:#854632;
+    font-weight:bold;
+}

@@ -1,0 +1,144 @@
+/* 1st,  root  */
+
+:root {
+    --main-color: blue;
+}
+
+h1 {
+    color: var(--main-color);
+}
+
+
+:root {
+    --bg-color: lightgray;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+
+:root {
+    --font-size: 20px;
+}
+
+p {
+    font-size: var(--font-size);
+}
+
+
+
+:root {
+    --radius: 10px;
+}
+
+button {
+    border-radius: var(--radius);
+}
+
+
+
+:root {
+    --padding: 15px;
+}
+
+.card {
+    padding: var(--padding);
+}
+
+
+
+/* 2nd, "z" index  */
+
+.red {
+    position: absolute;
+    z-index: 1;
+}
+
+
+.blue {
+    position: absolute;
+    z-index: 5;
+}
+
+
+.modal {
+    position: fixed;
+    z-index: 1000;
+}
+
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+
+.image {
+    position: relative;
+    z-index: -1;
+}
+
+
+
+/* 3rd, float and clear */
+
+img {
+    float: left;
+}
+
+
+img {
+    float: right;
+}
+
+
+.clear {
+    clear: left;
+}
+
+
+.clear {
+    clear: right;
+}
+
+
+.footer {
+    clear: both;
+}
+
+
+
+/* 4th, prefix */
+
+.box {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+
+.box {
+    -moz-user-select: none;
+    user-select: none;
+}
+
+
+.box {
+    -webkit-box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px black;
+}
+
+
+.box {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+
+.box {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+
