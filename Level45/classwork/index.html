@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS EXAMPLES</title>
+  <style>
+  
+    :is(h1, h2) {
+      color: #2563eb;
+    }
+
+    :is(.red-btn, .blue-btn) {
+      padding: 10px 18px;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .red-btn { background: #ef4444; }
+    .blue-btn { background: #3b82f6; }
+
+
+   
+    .card:has(img) {
+      border: 3px solid #22c55e;
+    }
+
+    form:has(input:invalid) {
+      background: #fee2e2;
+      padding: 15px;
+    }
+
+
+
+    :where(article, section) p {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    :where(.menu, .footer-links) a {
+      text-decoration: none;
+      color: #7c3aed;
+      margin-right: 12px;
+    }
+
+  
+    .glass-box {
+      width: 250px;
+      padding: 25px;
+      background: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(10px);
+      border-radius: 15px;
+    }
+
+    .dark-glass {
+      width: 250px;
+      padding: 25px;
+      background: rgba(0, 0, 0, 0.25);
+      backdrop-filter: brightness(1.4) saturate(160%);
+      color: white;
+      border-radius: 15px;
+    }
+
+
+  
+    .cover-image {
+      width: 250px;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .contain-image {
+      width: 250px;
+      height: 160px;
+      object-fit: contain;
+      background: #ddd;
+    }
+w
+    .relative-box {
+      position: relative;
+      width: 300px;
+      height: 150px;
+      background: #bfdbfe;
+    }
+
+    .absolute-box {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      padding: 10px;
+      background: #1d4ed8;
+      color: white;
+    }
+
+    .fixed-button {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      padding: 14px;
+      border: none;
+      border-radius: 50%;
+      background: #16a34a;
+      color: white;
+      cursor: pointer;
+    }
+
+    body {
+      min-height: 1200px;
+      padding: 30px;
+      background: linear-gradient(120deg, #fbcfe8, #bfdbfe);
+    }
+
+    .card {
+      background: white;
+      padding: 15px;
+      width: 250px;
+      margin: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>CSS</h1>
+  <h2>:is(), :has(), :where()</h2>
+
+  <button class="red-btn">Red button</button>
+  <button class="blue-btn">Blue button</button>
+
+  <div class="card">
+    <img src="https://picsum.photos/200/100" alt="Example image" />
+    <p>This card has an image.</p>
+  </div>
+
+  <form>
+    <input type="email" placeholder="Enter email" required />
+  </form>
+
+  <article>
+    <p>Article paragraph with :where().</p>
+  </article>
+
+  <nav class="menu">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+  </nav>
+
+  <br /><br />
+
+  <div class="glass-box">Blur glass effect</div>
+  <br />
+  <div class="dark-glass">Brightness and saturation effect</div>
+
+  <br />
+
+  <img class="cover-image" src="https://picsum.photos/400/200" alt="Cover image" />
+  <img class="contain-image" src="https://picsum.photos/400/200" alt="Contain image" />
+
+  <br /><br />
+
+  <div class="relative-box">
+    Parent: position relative
+    <div class="absolute-box">position absolute</div>
+  </div>
+
+  <button class="fixed-button">+</button>
+
+</body>
+</html>

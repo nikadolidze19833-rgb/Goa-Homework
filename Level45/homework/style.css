@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f5f5;
+    color: white;
+}
+
+/* Main blue container */
+.page {
+    width: 100%;
+    min-height: 100vh;
+    background: #2d55f5;
+}
+
+/* Header */
+.header {
+    height: 64px;
+    padding: 0 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.logo span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* Hamburger */
+.menu {
+    width: 20px;
+    height: 18px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.menu i {
+    width: 16px;
+    height: 2px;
+    background: white;
+    display: block;
+    margin-left: auto;
+}
+
+/* Main layout */
+.hero {
+    min-height: calc(100vh - 64px);
+
+    display: grid;
+
+    /*
+        Left side = 45%
+        Right side = 55%
+    */
+    grid-template-columns: 45% 55%;
+}
+
+/* Intro section */
+.intro {
+    padding: 0 45px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.intro h1 {
+    font-size: clamp(48px, 4.2vw, 62px);
+    line-height: 0.98;
+    font-weight: 400;
+    letter-spacing: -2.5px;
+    margin-bottom: 40px;
+}
+
+.intro p {
+    max-width: 420px;
+
+    font-size: 16px;
+    line-height: 1.55;
+    font-weight: 400;
+
+    color: rgba(255, 255, 255, 0.72);
+}
+
+/* Statistics grid */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+/* Individual stat */
+.stat {
+    min-height: 300px;
+    padding: 32px 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    border-right: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.stat:nth-child(2),
+.stat:nth-child(4) {
+    border-right: none;
+}
+
+.stat:nth-child(3),
+.stat:nth-child(4) {
+    border-bottom: none;
+}
+
+/* Top row of statistic */
+.stat-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.stat-top strong {
+    font-size: 36px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: -1px;
+}
+
+.icon {
+    font-size: 32px;
+    line-height: 1;
+    font-weight: 300;
+}
+
+/* Bottom text */
+.stat-bottom h3 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.stat-bottom p {
+    font-size: 13px;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.58);
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    .header {
+        padding: 0 30px;
+    }
+
+    .hero {
+        grid-template-columns: 40% 60%;
+    }
+
+    .intro {
+        padding: 40px 30px;
+    }
+
+    .intro h1 {
+        font-size: 44px;
+    }
+
+    .intro p {
+        font-size: 14px;
+    }
+
+    .stat {
+        min-height: 250px;
+        padding: 25px 22px;
+    }
+
+    .stat-top strong {
+        font-size: 30px;
+    }
+
+    .icon {
+        font-size: 27px;
+    }
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 650px) {
+
+    .header {
+        height: 60px;
+        padding: 0 22px;
+    }
+
+    .hero {
+        display: block;
+    }
+
+    .intro {
+        min-height: 430px;
+        padding: 50px 25px;
+
+        border-right: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+        justify-content: center;
+    }
+
+    .intro h1 {
+        font-size: 48px;
+        line-height: 1;
+        letter-spacing: -2px;
+        margin-bottom: 30px;
+    }
+
+    .intro p {
+        max-width: 100%;
+        font-size: 15px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .stat {
+        min-height: 260px;
+        padding: 28px 25px;
+
+        border-right: none !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12) !important;
+    }
+
+    .stat:last-child {
+        border-bottom: none !important;
+    }
+
+    .stat-top strong {
+        font-size: 34px;
+    }
+}
+
+
+/* ========================================
+   SMALL MOBILE
+======================================== */
+
+@media (max-width: 400px) {
+
+    .intro {
+        min-height: 400px;
+        padding: 40px 20px;
+    }
+
+    .intro h1 {
+        font-size: 40px;
+    }
+
+    .stat {
+        min-height: 230px;
+        padding: 25px 20px;
+    }
+
+    .stat-top strong {
+        font-size: 30px;
+    }
+}
