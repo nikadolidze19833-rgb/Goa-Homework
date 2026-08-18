@@ -1,0 +1,11 @@
+alert("world will end in 10sec");
+alert("world will end in 9sec");
+alert("world will end in 8sec");
+alert("world will end in 7sec");
+alert("world will end in 6sec");
+alert("world will end in 5sec");
+alert("world will end in 4sec");
+alert("world will end in 3sec");
+alert("world will end in 2sec");
+alert("world will end in 1sec");
+alert("BOOM! world is destroyed");
